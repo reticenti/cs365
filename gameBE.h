@@ -22,5 +22,5 @@ void calculateColors(game* currentGame)
 
     int amountFlashes = 4 * currentGame->getDifficulty();
     for(int i = 0; i < amountFlashes; i++)
-        currentGame->color.push_back(rand() % 4);
+        currentGame->color.push_back(rand() % 4 + 1);
 }
